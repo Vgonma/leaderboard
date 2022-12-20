@@ -18,10 +18,18 @@ button {
   padding: 12px;
 }
 
-.main-container {
+.scores-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.score-display-container {
   margin: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 900px;
 }
 
 .recent-scores {
@@ -82,7 +90,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .main-container {
+  .score-display-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
