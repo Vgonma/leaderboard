@@ -94,10 +94,11 @@ Clone this repository to your desired folder:
 
 ```cd my-folder   
     git clone git@github.com:Vgonma/leaderboard.git
+    cd leaderboard
 ```
 Install dependencies:
 ```
-    npm i -y
+    npm i
 ```
 
 Build the webapp:
