@@ -1,1 +1,89 @@
-/* code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+button {
+  padding: 0 4px;
+}
+
+.header-container {
+  width: 100%;
+  padding: 12px;
+}
+
+.main-container {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recent-scores {
+  padding: 10px;
+}
+
+.recent-scores-head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.scoreboard {
+  list-style: none;
+  border: solid black;
+  border-radius: 2px;
+}
+
+.score {
+  padding: 3px;
+  background-color: #eee;
+}
+
+.score:nth-child(odd) {
+  background-color: #fff;
+}
+
+.add-score {
+  padding: 10px;
+}
+
+.add-score-head-container {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-score-form {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-score-form > input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 2px 5px;
+  font-size: 16px;
+}
+
+.add-score-form > input::placeholder {
+  font-size: 12px;
+}
+
+.add-score-form > button {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
