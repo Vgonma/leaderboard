@@ -47,6 +47,9 @@ button {
   list-style: none;
   border: solid black;
   border-radius: 2px;
+  max-height: 315px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .score {
