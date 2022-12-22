@@ -21,12 +21,11 @@ refreshbtn.addEventListener('click', () => {
 });
 
 const addScoreForm = document.querySelector('.add-score-form');
-addScoreForm.addEventListener('submit', (e) => {
+addScoreForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const user = addScoreForm.children[0].value;
   const score = parseInt(addScoreForm.children[1].value, 10);
-  addScore(user, score);
+  await addScore(user, score);
   addScoreForm.children[0].value = '';
   addScoreForm.children[1].value = '';
-  setTimeout(() => populateBoard(), 500);
 });
