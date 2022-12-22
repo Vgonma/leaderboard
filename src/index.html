@@ -16,22 +16,24 @@
     <section class="score-display-container">
       <div class="recent-scores">
         <div class="recent-scores-head-container">
-          <h2 class="recent-scores-title">Recent scores</h2>
-          <button class="btn-refresh">Refresh</button>
+          <h2 class="recent-scores-title">High scores</h2>
+          <button class="btn-refresh">&#x21bb;</button>
         </div>
         <ul class="scoreboard">
         </ul>
       </div>
 
       <div class="add-score">
-        <div class="add-score-head-container">
-          <h2 class="recent-scores-title">Add your score</h2>
+        <div class="add-score-small-container recent-scores">
+          <div class="add-score-head-container">
+            <h2 class="recent-scores-title">Add your score</h2>
+          </div>
+          <form class="add-score-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="number" placeholder="Your score" min="1" required>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <form class="add-score-form">
-          <input type="text" placeholder="Your name" required>
-          <input type="number" placeholder="Your score" min="1" required>
-          <button type="submit">Submit</button>
-        </form>
       </div>
 
     </section>
