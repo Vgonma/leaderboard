@@ -200,6 +200,13 @@ h2 {
     grid-template-rows: auto;
   }
 
+  .add-score {
+    padding: 0;
+    margin-bottom: 16px;
+    grid-row: 1;
+    max-width: 380px;
+  }
+
   .score:first-child {
     min-height: 80px;
     height: max-content;
