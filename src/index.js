@@ -10,7 +10,11 @@ const populateBoard = async () => {
   for (let i = data.result.length - 1; i >= 0; i -= 1) {
     const li = document.createElement('li');
     li.classList.add('score');
-    li.innerHTML = `${data.result[i].user}: ${data.result[i].score}`;
+    li.innerHTML = `
+    <span class="placement">${scoreboardDOM.children.length + 1}</span>
+    <span class="name-tracker">
+    ${data.result[i].user}</span>
+    <span class="points-tracker">${data.result[i].score}</span>`;
     scoreboardDOM.appendChild(li);
   }
 };
