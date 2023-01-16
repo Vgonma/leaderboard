@@ -28,7 +28,7 @@
 
 
 
-**Leaderboard** is a simple web application that displays a list of scores and allows you to add new ones.
+**Leaderboard** is a simple web application that displays a list of scores and allows the addition of new ones.
 
 
 ## 🛠 Built With <a name="built-with"></a>
